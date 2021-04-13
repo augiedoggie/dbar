@@ -5,6 +5,7 @@
 #include <Roster.h>
 
 #include <iostream>
+#include <stdlib.h> // gcc2
 
 using namespace std;
 
