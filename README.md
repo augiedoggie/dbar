@@ -1,4 +1,4 @@
-## dbar for Haiku OS
+## dbar for the Haiku operating system
 
 A command line tool to help manipulate the contents of the Deskbar shelf.  Allows listing/adding/removing Deskbar replicants.
 
