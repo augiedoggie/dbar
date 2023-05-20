@@ -16,6 +16,6 @@ Usage: dbar [-s] [-r] [-k] [-d id/name] [-a /path/to/replicant]
 ### Build Instructions
 
 ```
-cmake .
-make
+~> cd dbar
+~/dbar> jam
 ```
