@@ -15,6 +15,8 @@ Usage: dbar [-s] [-r] [-k] [-d id/name] [-a /path/to/replicant]
 
 ### Build Instructions
 
+You must have the `jamfile_engine` package installed in order to build.
+
 ```
 ~> cd dbar
 ~/dbar> jam
