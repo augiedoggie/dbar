@@ -3,7 +3,6 @@
 
 #include <Deskbar.h>
 #include <Roster.h>
-
 #include <iostream>
 #include <stdlib.h> // gcc2
 
@@ -13,7 +12,8 @@ using namespace std;
 const char* kDeskbarMimeType = "application/x-vnd.Be-TSKB";
 
 
-void scan_deskbar()
+void
+scan_deskbar()
 {
 	cout << "Scanning Deskbar items..." << endl;
 
@@ -32,7 +32,8 @@ void scan_deskbar()
 }
 
 
-void delete_item(const char* nameOrId)
+void
+delete_item(const char* nameOrId)
 {
 	cout << "Removing Deskbar item: '" << nameOrId << "'" << endl;
 
@@ -61,7 +62,8 @@ void delete_item(const char* nameOrId)
 }
 
 
-void add_item(const char* path)
+void
+add_item(const char* path)
 {
 	cout << "Adding Deskbar item: '" << path << "'" << endl;
 
@@ -92,7 +94,8 @@ void add_item(const char* path)
 }
 
 
-status_t quit_deskbar()
+status_t
+quit_deskbar()
 {
 	cout << "Quitting Deskbar..." << endl;
 
@@ -114,7 +117,8 @@ status_t quit_deskbar()
 }
 
 
-status_t kill_deskbar()
+status_t
+kill_deskbar()
 {
 	cout << "Killing Deskbar..." << endl;
 
@@ -137,7 +141,8 @@ status_t kill_deskbar()
 }
 
 
-void restart_deskbar()
+void
+restart_deskbar()
 {
 	if (quit_deskbar() != B_OK) {
 		if (kill_deskbar() != B_OK)
@@ -164,7 +169,9 @@ void restart_deskbar()
 }
 
 
-void print_usage(const char* progname) {
+void
+print_usage(const char* progname)
+{
 	cout << "Usage: " << progname << " [-s] [-r] [-k] [-d id/name] [-a /path/to/replicant]" << endl;
 	cout << "  -s: Scan deskbar items and print ID/Name." << endl;
 	cout << "  -r: Restart deskbar." << endl;
@@ -175,8 +182,9 @@ void print_usage(const char* progname) {
 }
 
 
-int main(int argc, char** argv) {
-
+int
+main(int argc, char** argv)
+{
 	if (argc == 1) {
 		print_usage(argv[0]);
 		return 1;
